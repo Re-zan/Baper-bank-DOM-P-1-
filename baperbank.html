@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tk Tk Tk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-9/12 mx-auto text-center my-16 text-blue-600">
+      <h2 class="text-6xl">Abbu tk dao</h2>
+
+      <!-- values -->
+
+      <div class="grid grid-cols-3 gap-4 my-9">
+        <div class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-8">
+          <p>Depiosit</p>
+          <p class="text-5xl">$<span id="dep_value">00</span></p>
+        </div>
+        <div
+          class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... text-white p-8"
+        >
+          <p>WithDraw</p>
+          <p class="text-5xl">$<span id="withdrw_value">00</span></p>
+        </div>
+        <div
+          class="bg-gradient-to-r from-slate-600 via-teal-400 to-emerald-500 text-white p-8"
+        >
+          <p>The Total</p>
+          <p class="text-5xl">$<span id="the_total">100</span></p>
+        </div>
+      </div>
+
+      <!-- input the vlaues -->
+
+      <div class="grid grid-cols-2 gap-4 my-9">
+        <div class="bg-gradient-to-r from-blue-700 to-red-400 p-8">
+          <p class="text-white">Input The Depiosit</p>
+          <input
+            type="text"
+            name=" "
+            id="input_dep"
+            class="block w-9/12 mx-auto my-4 p-3"
+          />
+          <button
+            type="submit"
+            class="block w-1/4 mx-auto py-3 bg-orange-300 text-slate-900"
+            id="desp_btn"
+          >
+            Submit
+          </button>
+        </div>
+        <div
+          class="bg-gradient-to-r from-red-800 via-orange-500 to-orange-400 ... p-8"
+        >
+          <p class="text-white">Input The WithDraw</p>
+          <input
+            type="text"
+            name=" "
+            id="input_withdraw"
+            class="block w-9/12 mx-auto my-6 p-3"
+          />
+          <button
+            type="submit"
+            class="block w-1/4 mx-auto py-3 bg-orange-300 text-slate-900"
+            id="withdraw_btn"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./baperbankbyfun.js"></script>
+    <script src="./baperbankcal.js"></script>
+  </body>
+</html>
